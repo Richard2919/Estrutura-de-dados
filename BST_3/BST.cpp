@@ -22,7 +22,7 @@ bool BinarySearchTree::full(){
 }
 
 void BinarySearchTree::clear(){
-    clear(root);
+    return clear(root);
     root = NULL;
 }
 
