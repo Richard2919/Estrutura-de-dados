@@ -252,7 +252,7 @@ bool BinarySearchTree::remove(TreeEntry x, TreePointer &p){
 }
 
 void BinarySearchTree::removeMin(TreePointer &q, TreePointer &r){
-    if(r->leftNode == NULL){ // Detecta o nó mínimo
+    if(r->leftNode != NULL){ // Detecta o nó mínimo
         removeMin(q, r->leftNode); // Faz a chamada recursiva para a esquerda.Serve para retornar o controle após atingir o nó mínimo
     }else{
         q->entry = r->entry; // copia o valor do menor nó para q

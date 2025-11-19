@@ -245,7 +245,7 @@ bool BinarySearchTree::remove(TreeEntry x, TreePointer &p){
 }
 
 void BinarySearchTree::removeMin(TreePointer &q, TreePointer &r){
-    if(r->leftNode == NULL){
+    if(r->leftNode != NULL){
         removeMin(q, r->leftNode);
     }else{
         q->entry = r->entry;
